@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+  <link href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1>Account</h1>
+    {% if 'guest' == user %}
+      <p>Hey {{ user }}, new functionality will be available soon.</p>
+    {% else %}
+      <p>Hey {{ user }}, you can test the API connections here.</p>
+      <br>
+      <form action="" method="post">
+        {% if api %}
+          <input type="text" placeholder="/robots.txt" name="api" value="">
+        {% else %}
+          <input type="text" placeholder="/robots.txt" name="api" value="{{ request.form.api | safe }}">
+        {% endif %}        
+        <input class="btn btn-default" type="submit" value="Submit">
+      </form>
+    {% if api %}
+      <br>
+      <p class="error">API status: <strong>{{ api | safe }}</strong> unreachable.
+    {% endif %}
+    {% endif %}
+  </div>
+{% endblock %}

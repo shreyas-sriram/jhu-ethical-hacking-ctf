@@ -1,0 +1,10 @@
+<header>
+    <nav>
+        <a href="/">Home</a>
+        {% if user %}
+        <a href="/logout">Logout</a>
+        {% else %}
+        <a href="/login">Login</a>
+        {% endif %}
+   </nav>
+ </header>

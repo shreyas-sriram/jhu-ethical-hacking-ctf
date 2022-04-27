@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 3da335c949acfd316c6a41e08c5b5402d7441dc4 Shreyas Sriram <shreyassriram99@gmail.com> 1646753064 -0500	commit (initial): Initial commit
+3da335c949acfd316c6a41e08c5b5402d7441dc4 5efea8262bb717d925e47972f04a33016a35a53d Shreyas Sriram <shreyassriram99@gmail.com> 1646753096 -0500	commit: Add example password file
+5efea8262bb717d925e47972f04a33016a35a53d eabfc528284102c6dfd3c4f6880d20fb9e0fc142 Shreyas Sriram <shreyassriram99@gmail.com> 1646753194 -0500	commit: Add support for CLI arguments
